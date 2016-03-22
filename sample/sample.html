@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/sample.css">
+</head>
+<body ng-app="app">
+    <div class="container" ng-controller="sampleController">
+        <div class="jumbotron">
+        <h1>Loading Animation</h1>
+            <p class="lead">Basic samples for working with the Loading Animation module for AngularJS
+            </p>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Basic button loading animation</h3>
+            </div>
+            <div class="panel-body">
+                <button class="btn btn-primary" loading-animator observe="item" ng-click="fakeLoading(item)">{{ name }}</button>
+
+                <div>
+                    <pre class="customCode">$scope.item = {{ item }}</pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../resources/jquery-2.2.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="sampleApp.js"></script>
+    <script src="../src/ngLoadingAnimator.js"></script>
+</body>
+</html>
